@@ -11,7 +11,9 @@ html {
 }
 body {
   background-color: #9c8181;
-  background-color: linear-gradient(90deg, #c56666 0%, #b9a7a7 100%);
+  background-color: linear-gradient(90deg,  #c56666 0%, #b9a7a7 100%);
+  height: fit-content;
+  max-height: auto;
 }
 .container {
   display: flex;
@@ -21,16 +23,13 @@ body {
 }
 
 .todo-list {
-  outline: 0.2rem solid white;
+outline: 0.2rem solid white;
   width: 50rem;
   height: auto;
   border-radius: 1rem;
   padding: 1rem;
-  background-color: rgb(147, 71, 71);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
+    background-color: rgb(147, 71, 71);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;}
 
 .todo-list h1 {
   margin-bottom: 1.5rem;
@@ -86,11 +85,9 @@ body {
 
 .taskSection {
   height: 30.8rem;
-  border: 0.2rem Solid rgb(255, 255, 255);
+  border: 0.2rem Solid rgb(164, 160, 160);
   border-radius: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .taskInner {
@@ -99,7 +96,7 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
-  border-bottom: 0.2rem Solid rgb(255, 255, 255);
+  border-bottom: 0.2rem Solid rgb(0, 0, 0);
   border-top-right-radius: 0.9rem;
   border-top-left-radius: 0.9rem;
   padding: 0.8rem;
@@ -272,9 +269,10 @@ ul li.checked:before {
 
   .delete-btn {
     font-size: 0.8rem;
-    float: right;
+        float: right;
     margin-top: 0.5rem;
     padding: 0.5rem 0.5rem;
+
   }
 
   .taskSection {
