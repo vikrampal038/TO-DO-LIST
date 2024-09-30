@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+  font: size 67.6%;
+  /* 1rem = 10px */
+}
+body {
+  background-color: #934747;
+  background-image: linear-gradient(90deg, #994c4c 33% #c56666 33%, #551b1b 33%);
+  padding: 45px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  width: 50rem;
+  height: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  /* margin: 2rem; */
+  background-color: rgb(147, 71, 71);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.todo-list h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contain {
+  width: 31rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20%;
+}
+
+.contain .add_item {
+  font-size: 1.5rem;
+  border-radius: 4rem 0 0 4rem;
+  border: none;
+  background: #fbfbfb;
+  outline: none;
+  color: black;
+  padding: 1rem 1rem;
+  height: 3.5rem;
+  flex: 1;
+}
+
+.contain .add-btn {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 0 4rem 4rem 0;
+  background: #8e8e8e;
+  color: #000000;
+  padding: 0 1.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+
+/* here start main section */
+
+.main-contain {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.taskSection {
+  height: 30.8rem;
+  border: 0.2rem Solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  border-bottom-right-radius: 0rem;
+}
+
+.taskInner {
+  /* background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);  */
+  background-color: rgb(66, 44, 44);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  border-bottom: 0.2rem Solid rgb(0, 0, 0);
+  border-top-right-radius: 0.9rem;
+  border-top-left-radius: 0.9rem;
+  padding: 0.8rem;
+  color: white;
+}
+
+.result {
+  max-height: 26rem;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  /* border-bottom-right-radius: 0.9rem; */
+  /* border-bottom-left-radius: 0.9rem; */
+}
+
+.result::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  height: rem;
+}
+.result::-webkit-scrollbar-thumb:hover {
+  background-color: #a5a5a5;
+}
+
+.list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  word-wrap: break-word;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #000000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result ul li {
+  width: 93%;
+  list-style: none;
+  font-size: 2rem;
+  padding: 1rem 0.8rem 1rem 5rem;
+  cursor: pointer;
+  position: relative;
+  margin: 0.5rem;
+  border-radius: 2rem;
+}
+
+.result ul li:before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url(Assets/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 1.2rem;
+  left: 1.8rem;
+}
+ul li.checked {
+  text-decoration: line-through;
+}
+ul li.checked:before {
+  background-image: url(Assets/checked.png);
+}
+
+.delete-btn {
+  float: right;
+  /* right: 2rem; */
+  background-color: red;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.congratulation {
+  font-size: 2rem;
+  padding: 6rem 0;
+  color: white;
+}
+
+/* Responsive styles for tablet devices (width between 768px to 1024px) */
+@media (max-width: 1024px) {
+  .todo-list {
+    width: 100%;
+  }
+
+  .contain {
+    width: 100%;
+    left: 0;
+  }
+
+  .todo-list h1 {
+    font-size: 2.5rem;
+  }
+
+  .taskInner {
+    font-size: 1.8rem;
+  }
+
+  .result ul li {
+    font-size: 1.6rem;
+  }
+
+  .delete-btn {
+    font-size: 0.8rem;
+    float: right;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .result ul li:before {
+    left: 0.1rem;
+  }
+  .result ul li {
+    padding: 1rem 0.8rem 1rem 3rem;
+  }
+}
+
+/* Responsive styles for mobile devices (width below 768px) */
+@media (max-width: 768px) {
+  .todo-list {
+    width: 100%;
+  }
+
+  .contain {
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+  }
+
+  .contain .add_item {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4rem;
+  }
+
+  .contain .add-btn {
+    width: 100%;
+    border-radius: 4rem;
+  }
+
+  .todo-list h1 {
+    font-size: 2rem;
+  }
+
+  .taskInner {
+    font-size: 1.5rem;
+  }
+
+  .result ul li {
+    font-size: 1.4rem;
+  }
+
+  .delete-btn {
+    font-size: 0.8rem;
+        float: right;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+
+  }
+
+  .taskSection {
+    height: auto;
+  }
+
+  .result {
+    max-height: 20rem;
+  }
+  .result ul li:before {
+    left: 0.1rem;
+  }
+  .result ul li {
+    padding: 1rem 0.8rem 1rem 3rem;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
+    <title>To-DO List</title>
+  </head>
+  <body>
+    <div class="list-container">
+      <h1>TO-DO LIST</h1>
+      <div class="contain">
+        <label class="first"> Enter Your Task :</label>
+        <input class="add_item" type="text" placeholder="Complete Your Task" />
+        <input class="date-time" type="datetime-local" />
+        <button class="add-btn">ADD</button>
+      </div>
+      <div class="task-manager">
+        <!-- Pending Task section -->
+        <div class="task">
+          <h3>This Is Your Pending Task</h3>
+          <div class="output">
+            <input type="checkbox" id="pen-1" class="large" name="pen-1" />
+            <label for="pen-1">Complete my task</label><br />
+            <input type="checkbox" id="pen-2" class="large" name="pen-2" />
+            <label for="pen-2">Complete my task</label><br />
+            <input type="checkbox" id="pen-3" class="large" name="pen-3" />
+            <label for="pen-3">Complete my task</label><br />
+            <input type="checkbox" id="pen-4" class="large" name="pen-4" />
+            <label for="pen-4">Complete my task</label><br />
+            <input type="checkbox" id="pen-5" class="large" name="pen-5" />
+            <label for="pen-5">Complete my task</label><br />
+          </div>
+        </div>
+        <!-- Complete Task section -->
+        <div class="task">
+          <h3>This Is Your Complete Task</h3>
+          <div class="output">
+            <p class="com">
+              Complete my task <button class="del">DELETE</button>
+            </p>
+            <p class="com">
+              Complete my task <button class="del">DELETE</button>
+            </p>
+            <p class="com">
+              Complete my task <button class="del">DELETE</button>
+            </p>
+            <p class="com">
+              Complete my task <button class="del">DELETE</button>
+            </p>
+            <p class="com">
+              Complete my task <button class="del">DELETE</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link font Awesome file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Linked Css file -->
+    <link rel="Stylesheet" href="index.css" />
+
+  <!-- this is for icon link -->
+   <link rel="icon" href="Assets/icon-image.webp">
+
+    <!-- this is for link -->
+    <title>To-DO List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-list">
+        <h1>TO-DO LIST &#127809</h1>
+        <!-- This is a data collection Contain -->
+        <div class="contain">
+          <input
+            class="add_item"
+            type="text" id="input-box"
+            placeholder="Enter Your Task"
+            spellcheck="false"
+          />
+          <button onclick="addTask()" class="add-btn" >ADD</button>
+        </div>
+
+        <!-- here start is output section -->
+        <div class="main-contain">
+          <div class="taskSection">
+            <div class="taskInner"> &#129303 YOUR TODAY TASK  &#129303</div>
+            <!--this is heading section-->
+            <div class="result">
+              <ul id="list-container">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
