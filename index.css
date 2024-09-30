@@ -214,7 +214,7 @@ ul li.checked:before {
   .delete-btn {
     font-size: 0.8rem;
     float: right;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     padding: 0.5rem 0.5rem;
   }
   .result ul li:before {
@@ -269,7 +269,7 @@ ul li.checked:before {
   .delete-btn {
     font-size: 0.8rem;
         float: right;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     padding: 0.5rem 0.5rem;
 
   }
