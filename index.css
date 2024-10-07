@@ -10,8 +10,17 @@ html {
   /* 1rem = 10px */
 }
 body {
-  background-color: #9c8181;
-  background-color: linear-gradient(90deg, #c56666 0%, #b9a7a7 100%);
+  /* background-color: #9c8181;
+  background-color: linear-gradient(90deg, #c56666 0%, #b9a7a7 100%); */
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
 }
 .container {
   height: auto;
@@ -22,12 +31,11 @@ body {
 }
 
 .todo-list {
-  outline: 0.2rem solid white;
   width: 50rem;
   max-height: 42.5rem;
   border-radius: 1rem;
   padding: 1rem;
-  background-color: rgb(147, 71, 71);
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
